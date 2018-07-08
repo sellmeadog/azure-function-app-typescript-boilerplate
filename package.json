@@ -12,7 +12,25 @@
     "build": "webpack --config ./webpack.prd.js --progress --color --display-error-details",
     "prestart": "yarn clean",
     "start": "webpack --config ./webpack.dev.js --progress --color --display-error-details",
-    "poststart": "cd build && func start"
+    "poststart": "cd build && func start",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "./node_modules",
+      "./src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.(ts)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.ts",
+      "**/?(*.)(spec|test).ts"
+    ]
   },
   "dependencies": {
     "rxjs": "^6.2.1",
@@ -23,10 +41,13 @@
     "@babel/core": "^7.0.0-beta.52",
     "@babel/preset-env": "^7.0.0-beta.52",
     "@babel/preset-typescript": "^7.0.0-beta.52",
+    "@types/jest": "^23.1.4",
     "@types/node": "^10.5.2",
     "babel-loader": "^8.0.0-beta.4",
     "copy-webpack-plugin": "^4.5.2",
+    "jest": "^23.3.0",
     "rimraf": "^2.6.2",
+    "ts-jest": "^23.0.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2",
     "webpack": "^4.15.1",

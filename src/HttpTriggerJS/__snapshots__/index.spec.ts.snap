@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HttpTriggerJS should accept \`name\` in body 1`] = `
+Object {
+  "done": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "log": [MockFunction] {
+    "calls": Array [
+      Array [
+        "JavaScript HTTP trigger function processed a request.",
+      ],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "res": Object {
+    "body": "Hello Kennie",
+  },
+}
+`;
+
+exports[`HttpTriggerJS should accept \`name\` in query string 1`] = `
+Object {
+  "done": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "log": [MockFunction] {
+    "calls": Array [
+      Array [
+        "JavaScript HTTP trigger function processed a request.",
+      ],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "res": Object {
+    "body": "Hello Kennie",
+  },
+}
+`;
+
+exports[`HttpTriggerJS should return 400 when \`name\` not provided 1`] = `
+Object {
+  "done": [MockFunction] {
+    "calls": Array [
+      Array [],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "log": [MockFunction] {
+    "calls": Array [
+      Array [
+        "JavaScript HTTP trigger function processed a request.",
+      ],
+    ],
+    "results": Array [
+      Object {
+        "isThrow": false,
+        "value": undefined,
+      },
+    ],
+  },
+  "res": Object {
+    "body": "Please pass a name on the query string or in the request body",
+    "status": 400,
+  },
+}
+`;
