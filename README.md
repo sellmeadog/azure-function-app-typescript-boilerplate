@@ -21,7 +21,7 @@ yarn start
 
 This is intended to be used with the Azure Function Core Tools [Version 2.x](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2) and will run `func start` in the build output directory.
 
-If you are using [Version 1.x](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v1) of the core tools, you can either modify the `start` script in `package.json` or rely on `yarn build` and a manual `func start [functionname]`.
+If you are using [Version 1.x](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v1) of the core tools, you can either modify the `start` script in `package.json` or rely on `yarn build` and a manual `func run [functionname]`.
 
 ## Test
 
