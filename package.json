@@ -1,0 +1,35 @@
+{
+  "name": "@power9/magic-companion-api",
+  "version": "0.1.0",
+  "description": "MTG: Companion - an Azure Function App that provides API endpoints to the MTG: Companion mobile app.",
+  "main": "index.js",
+  "author": "Kennie J. Davis <kenniejaydavis@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf build",
+    "prebuild": "yarn clean",
+    "build": "webpack --config ./webpack.prd.js --progress --color --display-error-details",
+    "prestart": "yarn clean",
+    "start": "webpack --config ./webpack.dev.js --progress --color --display-error-details",
+    "poststart": "cd build && func start"
+  },
+  "dependencies": {
+    "rxjs": "^6.2.1",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.52",
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "@babel/preset-typescript": "^7.0.0-beta.52",
+    "@types/node": "^10.5.2",
+    "babel-loader": "^8.0.0-beta.4",
+    "copy-webpack-plugin": "^4.5.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  }
+}

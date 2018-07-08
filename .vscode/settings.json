@@ -1,0 +1,9 @@
+{
+  "azureFunctions.projectRuntime": "beta",
+  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.templateFilter": "Verified",
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5"
+}
