@@ -1,5 +1,5 @@
 {
-  "name": "@power9/magic-companion-api",
+  "name": "azure-function-app-typescript-boilerplate",
   "version": "0.1.0",
   "description": "MTG: Companion - an Azure Function App that provides API endpoints to the MTG: Companion mobile app.",
   "main": "index.js",
